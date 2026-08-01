@@ -1,85 +1,303 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alafia Wellness Clinic - Physiotherapy & Nutrition | Kampala</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            purple: '#1A56DB',
-                            navy: '#0D2E6E',
-                            blue: '#1A56DB',
-                            teal: '#2EAA4A',
-                            lightBg: '#F0F7F1'
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Heebo', 'sans-serif'],
-                        heading: ['Poppins', 'sans-serif'],
-                    },
-                    fontSize: {
-                        'h1': '48px',
-                        'h2': '38px',
-                        'body': '18px',
-                    },
-                    borderRadius: {
-                        'brand': '10px',
-                    }
-                }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alafia Wellness · Coming Soon</title>
+  <!-- Tailwind via CDN + custom config -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              purple: '#1A56DB',
+              navy: '#0D2E6E',
+              blue: '#1A56DB',
+              teal: '#2EAA4A',
+              lightBg: '#F0F7F1'
             }
+          },
+          fontFamily: {
+            sans: ['Heebo', 'sans-serif'],
+            heading: ['Poppins', 'sans-serif'],
+          },
+          fontSize: {
+            'h1': '48px',
+            'h2': '38px',
+            'body': '18px',
+          },
+          borderRadius: {
+            'brand': '10px',
+          }
         }
-    </script>
-    <style>
-        body {
-            font-family: 'Heebo', sans-serif;
-            color: #4A5568;
-            background-color: #FFFFFF;
-        }
-        h1, h2, h3, h4, h5, h6, .font-heading {
-            font-family: 'Poppins', sans-serif;
-        }
-        .marquee-container {
-            overflow: hidden;
-            white-space: nowrap;
-        }
-        .marquee-content {
-            display: inline-block;
-            animation: marquee 20s linear infinite;
-        }
-        @keyframes marquee {
-            0% { transform: translateX(100%); }
-            100% { transform: translateX(-100%); }
-        }
-        .dot-pattern {
-            background-image: radial-gradient(#0D2E6E 10%, transparent 11%);
-            background-size: 20px 20px;
-        }
-        .bg-wave-teal {
-            background: linear-gradient(135deg, #2EAA4A 0%, #1A56DB 100%);
-        }
-        /* Curve mask for the bottom of sections if needed */
-        .curve-bottom {
-            border-bottom-left-radius: 50% 5%;
-            border-bottom-right-radius: 50% 5%;
-        }
-        .hero-bg-overlay {
-            background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.85) 45%, rgba(255,255,255,0) 100%);
-        }
-    </style>
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Heebo', sans-serif;
+      color: #1e293b;
+      background: #fafcfb;
+    }
+    h1, h2, h3, h4, h5, h6, .font-heading {
+      font-family: 'Poppins', sans-serif;
+    }
+    /* subtle animated pulse for the coming-soon badge */
+    @keyframes softPulse {
+      0% { opacity: 0.7; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.02); }
+      100% { opacity: 0.7; transform: scale(1); }
+    }
+    .pulse-badge {
+      animation: softPulse 2.5s infinite ease-in-out;
+    }
+    /* gradient wave overlay for hero (soft) */
+    .hero-gradient {
+      background: linear-gradient(145deg, #f0f9f4 0%, #ffffff 70%);
+    }
+    /* decorative floating dots (soft) */
+    .dot-pattern-light {
+      background-image: radial-gradient(#0D2E6E 8%, transparent 9%);
+      background-size: 28px 28px;
+      opacity: 0.04;
+    }
+    /* countdown number style */
+    .countdown-number {
+      background: white;
+      box-shadow: 0 8px 20px rgba(13, 46, 110, 0.06);
+      border: 1px solid rgba(46, 170, 74, 0.15);
+    }
+    /* button hover */
+    .btn-primary {
+      background: #0D2E6E;
+      transition: all 0.2s ease;
+    }
+    .btn-primary:hover {
+      background: #1A56DB;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(26, 86, 219, 0.25);
+    }
+    /* social icons */
+    .social-icon {
+      transition: all 0.2s ease;
+      color: #1e293b;
+      background: white;
+      border: 1px solid #e2e8f0;
+    }
+    .social-icon:hover {
+      color: #0D2E6E;
+      border-color: #0D2E6E;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 14px rgba(13, 46, 110, 0.08);
+    }
+    /* brand underline */
+    .brand-underline {
+      height: 4px;
+      width: 70px;
+      background: linear-gradient(90deg, #2EAA4A, #1A56DB);
+      border-radius: 4px;
+      margin: 0.5rem auto 1.5rem auto;
+    }
+    .brand-underline-left {
+      height: 4px;
+      width: 70px;
+      background: linear-gradient(90deg, #2EAA4A, #1A56DB);
+      border-radius: 4px;
+      margin: 0.5rem 0 1.5rem 0;
+    }
+  </style>
 </head>
-<body class="antialiased">
+<body class="antialiased relative">
 
-    <!-- Marquee Banner -->
-   <P style="text-align:centre;">COMING SOON</P> 
+  <!-- ====== COMING SOON PAGE ====== -->
+  <main class="min-h-screen flex items-center justify-center px-4 py-12 relative overflow-hidden">
+
+    <!-- background decorative dots (light) -->
+    <div class="absolute inset-0 dot-pattern-light pointer-events-none"></div>
+
+    <!-- subtle wave shape at bottom right -->
+    <div class="absolute -bottom-16 -right-16 w-96 h-96 rounded-full bg-brand-teal/5 blur-3xl pointer-events-none"></div>
+    <div class="absolute -top-20 -left-20 w-80 h-80 rounded-full bg-brand-blue/5 blur-2xl pointer-events-none"></div>
+
+    <div class="relative z-10 w-full max-w-4xl mx-auto text-center md:text-left">
+
+      <!-- header: logo + badge -->
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 mb-8">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-full bg-brand-teal/10 flex items-center justify-center text-brand-navy text-2xl font-bold font-heading shadow-sm border border-brand-teal/20">
+            <i class="fas fa-leaf text-brand-teal text-xl"></i>
+          </div>
+          <div>
+            <h1 class="text-2xl font-heading font-bold text-brand-navy tracking-tight">Alafia Wellness</h1>
+            <p class="text-xs text-slate-500 font-medium tracking-wider uppercase">Physiotherapy · Nutrition</p>
+          </div>
+        </div>
+        <div class="px-5 py-2 rounded-full bg-brand-teal/10 border border-brand-teal/30 text-brand-navy text-sm font-semibold font-heading pulse-badge flex items-center gap-2">
+          <span class="inline-block w-2 h-2 rounded-full bg-brand-teal animate-pulse"></span>
+          Coming Soon
+        </div>
+      </div>
+
+      <!-- main hero grid: left text + right visual (optional) -->
+      <div class="grid md:grid-cols-5 gap-8 items-center">
+        <div class="md:col-span-3">
+          <!-- tagline -->
+          <p class="text-brand-teal font-semibold text-sm tracking-widest uppercase mb-2 flex items-center gap-2">
+            <i class="fas fa-spa text-brand-teal/70"></i> holistic wellness
+          </p>
+          <h2 class="text-4xl md:text-5xl font-heading font-bold leading-tight text-brand-navy">
+            A new kind of<br class="hidden md:block" /> 
+            <span class="bg-gradient-to-r from-brand-teal to-brand-blue bg-clip-text text-transparent">care is coming.</span>
+          </h2>
+          <div class="brand-underline-left"></div>
+          <p class="text-slate-600 text-lg max-w-xl leading-relaxed">
+            We're crafting a sanctuary for physiotherapy and nutrition in Kampala. 
+            Expert hands, personalized plans, and a space that feels like home.
+          </p>
+
+          <!-- countdown timer (simple) -->
+          <div class="mt-8 flex flex-wrap gap-4 items-center">
+            <div class="flex gap-4">
+              <div class="countdown-number rounded-xl px-4 py-3 min-w-[70px] text-center">
+                <span class="block text-3xl font-heading font-bold text-brand-navy" id="days">00</span>
+                <span class="text-xs uppercase tracking-wider text-slate-400">Days</span>
+              </div>
+              <div class="countdown-number rounded-xl px-4 py-3 min-w-[70px] text-center">
+                <span class="block text-3xl font-heading font-bold text-brand-navy" id="hours">00</span>
+                <span class="text-xs uppercase tracking-wider text-slate-400">Hours</span>
+              </div>
+              <div class="countdown-number rounded-xl px-4 py-3 min-w-[70px] text-center">
+                <span class="block text-3xl font-heading font-bold text-brand-navy" id="minutes">00</span>
+                <span class="text-xs uppercase tracking-wider text-slate-400">Mins</span>
+              </div>
+              <div class="countdown-number rounded-xl px-4 py-3 min-w-[70px] text-center">
+                <span class="block text-3xl font-heading font-bold text-brand-navy" id="seconds">00</span>
+                <span class="text-xs uppercase tracking-wider text-slate-400">Secs</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- notify form -->
+          <div class="mt-8 flex flex-col sm:flex-row gap-3 max-w-md">
+            <input type="email" placeholder="Enter your email for updates" 
+                   class="flex-1 px-5 py-3 rounded-xl border border-slate-200 bg-white/80 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-brand-teal/40 transition text-sm" />
+            <button class="btn-primary px-6 py-3 rounded-xl text-white font-medium text-sm flex items-center justify-center gap-2 shadow-md whitespace-nowrap">
+              <i class="far fa-bell"></i> Notify me
+            </button>
+          </div>
+          <p class="text-xs text-slate-400 mt-2 flex items-center gap-1">
+            <i class="fas fa-lock text-slate-300"></i> No spam, only wellness.
+          </p>
+        </div>
+
+        <!-- right visual: abstract wellness icon + phone mockup feel -->
+        <div class="md:col-span-2 hidden md:flex justify-center">
+          <div class="relative w-64 h-64">
+            <div class="absolute inset-0 bg-gradient-to-br from-brand-teal/5 to-brand-blue/5 rounded-full blur-2xl"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-48 h-48 rounded-full bg-white shadow-xl border border-brand-teal/20 flex items-center justify-center flex-col p-6">
+                <i class="fas fa-heart-pulse text-6xl text-brand-teal/30 mb-2"></i>
+                <i class="fas fa-utensils text-4xl text-brand-blue/30 -mt-3"></i>
+                <div class="mt-4 h-1 w-12 bg-gradient-to-r from-brand-teal to-brand-blue rounded-full"></div>
+                <p class="text-xs text-slate-400 mt-3 font-medium">physio · nutrition</p>
+              </div>
+            </div>
+            <!-- floating dots decoration -->
+            <div class="absolute top-4 right-2 w-6 h-6 rounded-full bg-brand-teal/10 border border-brand-teal/20"></div>
+            <div class="absolute bottom-8 left-0 w-4 h-4 rounded-full bg-brand-blue/10 border border-brand-blue/20"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- bottom: socials + location hint -->
+      <div class="mt-12 pt-6 border-t border-slate-200/50 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-500">
+        <div class="flex items-center gap-3">
+          <i class="fas fa-map-pin text-brand-teal/70"></i>
+          <span>Kampala, Uganda · opening August 2026</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="text-xs uppercase tracking-wider text-slate-400">Follow us</span>
+          <a href="#" class="social-icon w-9 h-9 rounded-full flex items-center justify-center"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon w-9 h-9 rounded-full flex items-center justify-center"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon w-9 h-9 rounded-full flex items-center justify-center"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="social-icon w-9 h-9 rounded-full flex items-center justify-center"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- small brand note -->
+      <div class="mt-6 text-center md:text-left text-xs text-slate-400/70">
+        <span class="inline-flex items-center gap-1"><i class="fas fa-leaf text-brand-teal/40"></i> Alafia Wellness Clinic · physiotherapy & nutrition</span>
+      </div>
+    </div>
+  </main>
+
+  <!-- ====== COUNTDOWN SCRIPT ====== -->
+  <script>
+    (function() {
+      // Set target date: 1 August 2026, 00:00:00 (Uganda time)
+      const targetDate = new Date('2026-08-01T00:00:00+0300').getTime();
+
+      function updateCountdown() {
+        const now = Date.now();
+        let diff = targetDate - now;
+
+        if (diff < 0) {
+          // If past, show 00:00:00:00
+          document.getElementById('days').textContent = '00';
+          document.getElementById('hours').textContent = '00';
+          document.getElementById('minutes').textContent = '00';
+          document.getElementById('seconds').textContent = '00';
+          return;
+        }
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        diff -= days * 1000 * 60 * 60 * 24;
+        const hours = Math.floor(diff / (1000 * 60 * 60));
+        diff -= hours * 1000 * 60 * 60;
+        const minutes = Math.floor(diff / (1000 * 60));
+        diff -= minutes * 1000 * 60;
+        const seconds = Math.floor(diff / 1000);
+
+        document.getElementById('days').textContent = String(days).padStart(2, '0');
+        document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+        document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+        document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+      }
+
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+    })();
+  </script>
+
+  <!-- simple interaction for "notify me" button (demo) -->
+  <script>
+    (function(){
+      const notifyBtn = document.querySelector('.btn-primary');
+      const emailInput = document.querySelector('input[type="email"]');
+      if (notifyBtn && emailInput) {
+        notifyBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          const email = emailInput.value.trim();
+          if (email === '') {
+            alert('Please enter your email address to get notified.');
+            return;
+          }
+          if (!email.includes('@') || !email.includes('.')) {
+            alert('Please enter a valid email address.');
+            return;
+          }
+          alert(`Thank you, ${email}! We’ll notify you when we launch. 🌿`);
+          emailInput.value = '';
+        });
+      }
+    })();
+  </script>
 
 </body>
 </html>
