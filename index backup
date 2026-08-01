@@ -1,1 +1,523 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alafia Wellness Clinic - Physiotherapy & Nutrition | Kampala</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            purple: '#1A56DB',
+                            navy: '#0D2E6E',
+                            blue: '#1A56DB',
+                            teal: '#2EAA4A',
+                            lightBg: '#F0F7F1'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Heebo', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    },
+                    fontSize: {
+                        'h1': '48px',
+                        'h2': '38px',
+                        'body': '18px',
+                    },
+                    borderRadius: {
+                        'brand': '10px',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Heebo', sans-serif;
+            color: #4A5568;
+            background-color: #FFFFFF;
+        }
+        h1, h2, h3, h4, h5, h6, .font-heading {
+            font-family: 'Poppins', sans-serif;
+        }
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 20s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .dot-pattern {
+            background-image: radial-gradient(#0D2E6E 10%, transparent 11%);
+            background-size: 20px 20px;
+        }
+        .bg-wave-teal {
+            background: linear-gradient(135deg, #2EAA4A 0%, #1A56DB 100%);
+        }
+        /* Curve mask for the bottom of sections if needed */
+        .curve-bottom {
+            border-bottom-left-radius: 50% 5%;
+            border-bottom-right-radius: 50% 5%;
+        }
+        .hero-bg-overlay {
+            background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.85) 45%, rgba(255,255,255,0) 100%);
+        }
+    </style>
+</head>
+<body class="antialiased">
 
+    <!-- Marquee Banner -->
+    <div class="bg-brand-teal text-white text-sm py-1.5 font-medium marquee-container" style="background-color:#2EAA4A;">
+        <div class="marquee-content px-4">
+            Your wellness journey starts here — expert Physiotherapy & Nutrition care in the heart of Kampala, Uganda. Visit us at Lukuli Rd, Kampala. Book your appointment today!
+        </div>
+    </div>
+
+    <!-- Contact Top Bar -->
+    <div class="text-white text-sm py-2" style="background-color:#1A56DB;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fa-regular fa-envelope"></i>
+                <span>info@alafiapointwellnessclinic.ug</span>
+            </div>
+            <div class="flex items-center space-x-3 mt-2 sm:mt-0">
+                <a href="#" class="bg-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-gray-100 transition" style="color:#1A56DB;" rel="nofollow"><i class="fa-brands fa-whatsapp text-xs"></i></a>
+                <a href="#" class="bg-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-gray-100 transition" style="color:#1A56DB;" rel="nofollow"><i class="fa-brands fa-facebook-f text-xs"></i></a>
+                <a href="#" class="bg-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-gray-100 transition" style="color:#1A56DB;" rel="nofollow"><i class="fa-brands fa-instagram text-xs"></i></a>
+                <a href="#" class="bg-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-gray-100 transition" style="color:#1A56DB;" rel="nofollow"><i class="fa-brands fa-linkedin-in text-xs"></i></a>
+                <a href="#" class="bg-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-gray-100 transition" style="color:#1A56DB;" rel="nofollow"><i class="fa-brands fa-twitter text-xs"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex-shrink-0">
+                <!-- Asset #1: Logo -->
+                <img src="Screenshot_2025-09-08_000950_c4CXhf5.png" alt="Alafia Point Wellness Clinic Logo" class="h-12">
+            </div>
+            <nav class="hidden md:flex space-x-6 text-[15px] font-medium" style="color:#0D2E6E;">
+                <a href="index.html" style="color:#1A56DB;" rel="nofollow">Home</a>
+                <a href="about.html" class="hover:text-green-600 transition" rel="nofollow">About</a>
+                <a href="services.html" class="hover:text-green-600 transition" rel="nofollow">Our Services</a>
+                <a href="physiotherapy.html" class="hover:text-green-600 transition" rel="nofollow">Physiotherapy</a>
+                <a href="nutrition.html" class="hover:text-green-600 transition" rel="nofollow">Nutrition</a>
+                <a href="contact.html" class="hover:text-green-600 transition" rel="nofollow">Contact Us</a>
+                <a href="book-appointment.html" class="hover:text-green-600 transition" rel="nofollow">Book Appointment</a>
+            </nav>
+            <div class="hidden lg:flex items-center space-x-3">
+                <a href="book-appointment.html" class="text-white px-5 py-2 rounded-full text-sm font-medium flex items-center space-x-2 transition" style="background-color:#2EAA4A;" rel="nofollow">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span>Book Now</span>
+                </a>
+                <a href="contact.html" class="text-white px-5 py-2 rounded-full text-sm font-medium flex items-center space-x-2 transition" style="background-color:#1A56DB;" rel="nofollow">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Contact Us</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gray-100 py-24 min-h-[600px] flex items-center" style="background-image: url('SAVE_20260709_174339.jpg'); background-size: cover; background-position: center center;">
+        <div class="absolute inset-0 hero-bg-overlay"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10 flex">
+            <div class="max-w-2xl w-full">
+                <p class="font-semibold tracking-wider text-sm mb-4 uppercase" style="color:#2EAA4A;">Alafia Wellness Clinic — Lukuli Rd, Kampala</p>
+                <h1 class="text-h1 font-heading font-bold leading-[1.1] mb-6" style="color:#1A56DB;">
+                    RESTORING HEALTH,<br>EMPOWERING LIVES<br>IN UGANDA
+                </h1>
+                <p class="text-body text-gray-600 mb-8 max-w-lg">
+                    Expert Physiotherapy &amp; Nutritional Care<br>Tailored for You in the Heart of Kampala
+                </p>
+                <div class="flex items-center space-x-4">
+                    <a href="book-appointment.html" class="w-12 h-12 rounded-full flex items-center justify-center text-white shadow-lg hover:scale-105 transition transform" style="background-color:#2EAA4A;" rel="nofollow">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <a href="book-appointment.html" class="font-medium" style="color:#0D2E6E;">Book an Appointment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section (Why Choose) -->
+    <section class="py-24 bg-white relative overflow-hidden text-center sm:text-left">
+        <!-- Background Asset #10 vaguely applied as soft decoration if needed, but keeping clean -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="absolute -top-6 -left-6 w-48 h-48 dot-pattern z-0"></div>
+                    <!-- Asset #2: Elderly woman -->
+                    <img src="SAVE_20260709_174310.jpg" alt="Caregiver with elderly person" class="rounded-brand relative z-10 w-full shadow-xl">
+                    <div class="absolute -bottom-6 -right-6 w-48 h-48 dot-pattern z-0 hidden sm:block"></div>
+                </div>
+                <div>
+                    <h2 class="text-h2 font-heading font-bold mb-6 leading-tight" style="color:#0D2E6E;">
+                        Why Choose<br>Alafia Wellness Clinic
+                    </h2>
+                    <p class="text-body text-gray-600 mb-8">
+                        At Alafia Wellness Clinic, we combine evidence-based physiotherapy with personalised nutrition programmes to deliver holistic, patient-centred care. Our multidisciplinary team is dedicated to helping every client in Kampala achieve lasting health and wellbeing.
+                    </p>
+                    <a href="about.html" class="inline-block font-semibold px-8 py-3 rounded-full text-sm uppercase tracking-wider transition" style="background-color:#E8F5E9; color:#2EAA4A;" rel="nofollow">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+
+            <!-- Stats Row -->
+            <div class="mt-24 pt-12 border-t border-gray-100 grid grid-cols-2 md:grid-cols-5 gap-8 text-center" style="color:#0D2E6E;">
+                <div>
+                    <div class="text-[42px] font-bold font-heading mb-1" style="color:#1A56DB;">500+</div>
+                    <div class="text-sm text-gray-500 font-medium">Patients Helped</div>
+                </div>
+                <div>
+                    <div class="text-[42px] font-bold font-heading mb-1" style="color:#2EAA4A;">8+</div>
+                    <div class="text-sm text-gray-500 font-medium">Years of Experience</div>
+                </div>
+                <div>
+                    <div class="text-[42px] font-bold font-heading mb-1" style="color:#1A56DB;">98%</div>
+                    <div class="text-sm text-gray-500 font-medium">Client Satisfaction</div>
+                </div>
+                <div>
+                    <div class="text-[42px] font-bold font-heading mb-1" style="color:#2EAA4A;">10+</div>
+                    <div class="text-sm text-gray-500 font-medium">Specialist Therapists</div>
+                </div>
+                <div>
+                    <div class="text-[42px] font-bold font-heading mb-1" style="color:#1A56DB;">6/7</div>
+                    <div class="text-sm text-gray-500 font-medium">Days Open</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-24 bg-wave-teal text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-h2 font-heading font-bold mb-4">Our Services</h2>
+            <p class="text-body mb-16 max-w-2xl mx-auto opacity-90">
+                Comprehensive physiotherapy and nutrition services for individuals, families, and corporate clients across Kampala
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <!-- Card 1 -->
+                <div class="bg-white text-center p-10 rounded-brand shadow-lg style="color:#0D2E6E;">
+                    <div class="w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6 text-3xl" style="border:2px solid #1A56DB; color:#1A56DB;">
+                        <i class="fa-solid fa-house-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-bold mb-4" style="color:#0D2E6E;">Physiotherapy</h3>
+                    <p class="text-gray-600 text-[15px]">
+                        From injury rehabilitation to chronic pain management, our certified physiotherapists deliver targeted, hands-on treatment plans to restore your mobility and strength.
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white text-center p-10 rounded-brand shadow-lg style="color:#0D2E6E;">
+                    <div class="w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6 text-3xl" style="border:2px solid #2EAA4A; color:#2EAA4A;">
+                        <i class="fa-solid fa-stethoscope"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-bold mb-4" style="color:#0D2E6E;">Nutrition & Dietetics</h3>
+                    <p class="text-gray-600 text-[15px]">
+                        Our registered dietitians create personalised meal and nutrition plans to support weight management, chronic disease control, sports performance, and overall wellness.
+                    </p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white text-center p-10 rounded-brand shadow-lg style="color:#0D2E6E;">
+                    <div class="w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6 text-3xl" style="border:2px solid #1A56DB; color:#1A56DB;">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-bold mb-4" style="color:#0D2E6E;">Wellness & Rehabilitation</h3>
+                    <p class="text-gray-600 text-[15px]">
+                        Our holistic wellness programmes combine exercise therapy, posture correction, and lifestyle coaching to help you recover faster and live better long-term.
+                    </p>
+                </div>
+            </div>
+
+            <a href="services.html" class="inline-block text-white font-medium px-8 py-3 rounded-full transition shadow-md" style="background-color:#1A56DB;" rel="nofollow">
+                ALL SERVICES
+            </a>
+        </div>
+    </section>
+
+    <!-- Mobile App Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="text-center lg:text-left">
+                    <!-- Asset #3: Mobile App -->
+                    <img src="https://flexiblehealthcareservice.co.uk/wp-content/uploads/2021/12/mobile_app-3-1024x1024.png" alt="Alafia Wellness Clinic Mobile App" class="max-w-sm mx-auto drop-shadow-2xl">
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">Alafia Wellness Clinic — Mobile App</h4>
+                    <h2 class="text-[32px] font-heading font-bold mb-6 leading-tight" style="color:#0D2E6E;">
+                        Manage Your Health &amp; Appointments<br>At Your Fingertips
+                    </h2>
+                    <p class="text-body text-gray-600 mb-8">
+                        Book sessions, track your progress, and access your personalised wellness plan anytime with the Alafia Wellness app.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <!-- Asset #4, #5: App Badges -->
+                        <a href="#" rel="nofollow"><img src="https://flexiblehealthcareservice.co.uk/wp-content/uploads/2021/12/android.png" alt="Get it on Google Play" class="h-14"></a>
+                        <a href="#" rel="nofollow"><img src="https://flexiblehealthcareservice.co.uk/wp-content/uploads/2021/12/apple.png" alt="Download on the App Store" class="h-14"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commitments Section -->
+    <section class="py-24 relative" style="background-color:#F0F7F1; background-image: url('SAVE_20260709_174339.jpg'); background-size: cover; background-position: center;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <div>
+                    <h4 class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Why Choose Us</h4>
+                    <h2 class="text-h2 font-heading font-bold mb-6" style="color:#0D2E6E;">Our Commitments</h2>
+                    <p class="text-body text-gray-600 mb-8">
+                        Alafia Wellness Clinic operates 6 days a week from our Lukuli Rd location in Kampala. Our experienced physiotherapists and nutritionists are committed to providing patient-centred, evidence-based care at every visit.
+                    </p>
+                    <a href="services.html" class="inline-block text-white font-medium px-8 py-3 rounded-full transition mb-12 shadow-md" style="background-color:#2EAA4A;" rel="nofollow">
+                        Discover More
+                    </a>
+                    <!-- Asset #6: Stomatology Nurse -->
+                    <img src="https://flexiblehealthcareservice.co.uk/wp-content/uploads/2021/12/portrait-of-stomatology-nurse-in-dental-reception-2DCEGRY-scaled.jpg" alt="Nurse in dental reception" class="rounded-brand w-full max-w-md shadow-xl">
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <!-- Commitment 1 -->
+                    <div class="bg-white p-8 rounded-brand shadow-sm text-center">
+                        <div class="w-16 h-16 mx-auto rounded-brand flex items-center justify-center text-white mb-6 text-2xl rotate-3" style="background-color:#1A56DB;">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                        <h3 class="text-lg font-heading font-bold mb-3" style="color:#0D2E6E;">Patient-Centred Care</h3>
+                        <p class="text-sm text-gray-500 leading-relaxed">
+                            Every treatment plan at Alafia is tailored specifically to the individual. We listen, assess, and design programmes that address your unique health goals and lifestyle.
+                        </p>
+                    </div>
+                    <!-- Commitment 2 -->
+                    <div class="bg-white p-8 rounded-brand shadow-sm text-center">
+                        <div class="w-16 h-16 mx-auto rounded-brand flex items-center justify-center text-white mb-6 text-2xl -rotate-3" style="background-color:#2EAA4A;">
+                            <i class="fa-regular fa-gem"></i>
+                        </div>
+                        <h3 class="text-lg font-heading font-bold mb-3" style="color:#0D2E6E;">Clinical Excellence</h3>
+                        <p class="text-sm text-gray-500 leading-relaxed">
+                            Our team holds internationally recognised qualifications and stays current with the latest clinical guidelines to deliver safe, effective, and evidence-based treatments.
+                        </p>
+                    </div>
+                    <!-- Commitment 3 -->
+                    <div class="bg-white p-8 rounded-brand shadow-sm text-center">
+                        <div class="w-16 h-16 mx-auto rounded-brand flex items-center justify-center text-white mb-6 text-2xl rotate-3" style="background-color:#1A56DB;">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <h3 class="text-lg font-heading font-bold mb-3" style="color:#0D2E6E;">Holistic Approach</h3>
+                        <p class="text-sm text-gray-500 leading-relaxed">
+                            We address the whole person — not just the symptom. By integrating physiotherapy with nutrition, we help you achieve sustainable, long-term health outcomes.
+                        </p>
+                    </div>
+                    <!-- Commitment 4 -->
+                    <div class="bg-white p-8 rounded-brand shadow-sm text-center">
+                        <div class="w-16 h-16 mx-auto rounded-brand flex items-center justify-center text-white mb-6 text-2xl -rotate-3" style="background-color:#2EAA4A;">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3 class="text-lg font-heading font-bold mb-3" style="color:#0D2E6E;">Integrity & Trust</h3>
+                        <p class="text-sm text-gray-500 leading-relaxed">
+                            We are transparent about your diagnosis, treatment options, and progress. Building a relationship of trust with every patient is at the core of everything we do.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Statement Section -->
+    <section class="py-24 text-white relative text-center" style="background-color:#1A56DB;">
+        <!-- Overlay/Background image structure can be enhanced if specific asset is required for bg -->
+        <div class="absolute inset-0 opacity-90" style="background-color:#1A56DB;"></div>
+        <div class="relative max-w-4xl mx-auto px-4 z-10">
+            <!-- Asset #7: Quote icon -->
+            <img src="https://flexiblehealthcareservice.co.uk/wp-content/uploads/2021/12/ekequote-1.png" alt="Quote" class="mx-auto mb-8 h-16">
+            <h2 class="text-h2 font-heading font-bold mb-6">Our Mission Statement</h2>
+            <p class="text-xl font-medium opacity-90 leading-relaxed">
+                To restore health, prevent injury, and empower every patient through compassionate physiotherapy and personalised nutrition care. At Alafia Wellness Clinic, we believe that &quot;a healthy community begins with one individual at a time.&quot;
+            </p>
+        </div>
+    </section>
+
+    <!-- Professional Reliable Care Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-[32px] font-heading font-bold mb-6 leading-tight" style="color:#0D2E6E;">
+                        Professional, Compassionate Care<br>Dedicated To You
+                    </h2>
+                    <p class="text-gray-600 text-body">
+                        Our experienced physiotherapists and nutritionists provide the highest quality care to ensure your recovery and wellbeing. Alafia Wellness Clinic is a leading physiotherapy and nutrition practice in Kampala, Uganda. Located on Lukuli Rd, we serve patients six days a week, offering a warm, welcoming environment where your health is our top priority.
+                    </p>
+                </div>
+                <div>
+                    <!-- Asset #8: Bg1 -->
+                    <img src="https://flexiblehealthcareservice.co.uk/wp-content/uploads/2021/12/Bg1-768x512.jpg" alt="Caregivers sitting outside" class="rounded-brand shadow-xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hiring Section (Pink/Purple Background) -->
+    <section class="py-24 relative" style="background-color:#EBF5EC;" style="background-image: url('https://flexiblehealthcareservice.co.uk/wp-content/uploads/2026/05/1d8fc5c1-87be-4e2e-8529-0588d06e4395.png'); background-size: cover;">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 bg-white/80 backdrop-blur-sm p-12 rounded-3xl shadow-lg border border-white/50">
+            <h2 class="text-2xl font-heading font-bold mb-4" style="color:#0D2E6E;">
+                Join Our Growing Team at Alafia Wellness Clinic!
+            </h2>
+            <p class="text-[15px] text-gray-700 mb-10 max-w-3xl mx-auto leading-relaxed">
+                Are you passionate about transforming lives through healthcare? We are looking for dedicated <strong class="style="color:#0D2E6E;">Physiotherapists, Nutritionists, Dietitians, Rehabilitation Assistants, and Wellness Coaches</strong> to join our team in Kampala, Uganda. Whether you're an experienced clinician or a passionate graduate, we offer a supportive, professional environment where you can grow and make a real difference. Be part of a team that puts patients first.
+            </p>
+            
+            <div class="flex flex-wrap justify-center gap-x-8 gap-y-6">
+                <!-- Location markers -->
+                <div class="flex flex-col items-center">
+                    <i class="fa-solid fa-location-dot text-2xl mb-2" style="color:#2EAA4A;"></i>
+                    <span class="text-xs font-semibold uppercase" style="color:#0D2E6E;">Physiotherapist</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fa-solid fa-location-dot text-2xl mb-2" style="color:#2EAA4A;"></i>
+                    <span class="text-xs font-semibold uppercase" style="color:#0D2E6E;">Nutritionist</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fa-solid fa-location-dot text-2xl mb-2" style="color:#2EAA4A;"></i>
+                    <span class="text-xs font-semibold uppercase" style="color:#0D2E6E;">Dietitian</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fa-solid fa-location-dot text-2xl mb-2" style="color:#2EAA4A;"></i>
+                    <span class="text-xs font-semibold uppercase" style="color:#0D2E6E;">Rehab Assistant</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fa-solid fa-location-dot text-2xl mb-2" style="color:#2EAA4A;"></i>
+                    <span class="text-xs font-semibold uppercase" style="color:#0D2E6E;">Wellness Coach</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fa-solid fa-location-dot text-2xl mb-2" style="color:#2EAA4A;"></i>
+                    <span class="text-xs font-semibold uppercase" style="color:#0D2E6E;">Receptionist</span>
+                </div>
+                <!-- <div class="flex flex-col items-center">
+                    <i class="fa-solid fa-location-dot text-2xl mb-2" style="color:#2EAA4A;"></i>
+                    <span class="text-xs font-semibold uppercase" style="color:#0D2E6E;">Clinic Manager</span>
+                </div> -->
+                <div class="flex flex-col items-center">
+                    <i class="fa-solid fa-location-dot text-2xl mb-2" style="color:#2EAA4A;"></i>
+                    <span class="text-xs font-semibold uppercase" style="color:#0D2E6E;">Massage Therapist</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-8" style="background-color:#2EAA4A;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-white">
+            <h3 class="text-xl font-heading font-semibold mb-4 md:mb-0">Get a Free Initial Consultation at Alafia Wellness Clinic</h3>
+            <a href="book-appointment.html" class="text-white uppercase text-sm font-medium px-8 py-3 rounded-full transition" style="background-color:#1A56DB;" rel="nofollow">
+                Book Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white pt-16 pb-8" style="background-color:#0D2E6E; border-top:4px solid #2EAA4A;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                
+                <!-- Col 1: About -->
+                <div>
+                    <!-- Asset #9: White Logo -->
+                    <img src="Screenshot_2025-09-08_000950_c4CXhf5.png" alt="Alafia Point Wellness Clinic Logo" class="h-14 mb-6">
+                    <p class="text-xs leading-relaxed text-gray-200">
+                        Alafia Wellness Clinic is dedicated to providing expert physiotherapy and personalised nutrition services in Kampala, Uganda. Restoring health and empowering lives — one patient at a time.
+                    </p>
+                </div>
+
+                <!-- Col 2: Connect -->
+                <div class="lg:col-span-1">
+                    <h4 class="text-lg font-heading font-bold mb-6">Connect With Us</h4>
+                    <div class="mb-4 text-sm text-gray-200">
+                        <p>+256 700 000 000 | info@alafiapointwellnessclinic.ug</p>
+                    </div>
+                    <div class="mb-4">
+                        <h5 class="font-bold text-sm mb-1">Physiotherapy Services</h5>
+                        <p class="text-xs text-gray-200">+256 700 000 001 | physio@alafiapointwellnessclinic.ug</p>
+                    </div>
+                    <div>
+                        <h5 class="font-bold text-sm mb-1">Nutrition &amp; Dietetics</h5>
+                        <p class="text-xs text-gray-200">+256 700 000 002 | nutrition@alafiapointwellnessclinic.ug</p>
+                    </div>
+                </div>
+
+                <!-- Col 3 & 4: Locations wrapper logic for grid -->
+                <div class="lg:col-span-2">
+                    <h4 class="text-lg font-heading font-bold mb-6">Find Us</h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-xs text-gray-200">
+                        
+                        <!-- Location: Kampala -->
+                        <div>
+                            <h5 class="font-bold text-white mb-2 text-sm">Kampala Clinic</h5>
+                            <p class="mb-2"><i class="fa-solid fa-location-dot mr-1 text-xs"></i> Lukuli Rd,<br>Kampala,<br>Uganda</p>
+                            <p class="mb-1"><i class="fa-solid fa-envelope mr-1 text-xs"></i> info@alafiapointwellnessclinic.ug</p>
+                            <p class="mb-3"><i class="fa-solid fa-phone mr-1 text-xs"></i> +256 700 000 000</p>
+                            <div class="flex space-x-2">
+                                <a href="#" class="bg-white w-6 h-6 rounded-sm flex items-center justify-center hover:bg-gray-200" style="color:#1A56DB;" rel="nofollow"><i class="fa-brands fa-facebook-f text-[10px]"></i></a>
+                                <a href="#" class="bg-white w-6 h-6 rounded-sm flex items-center justify-center hover:bg-gray-200" style="color:#1A56DB;" rel="nofollow"><i class="fa-brands fa-twitter text-[10px]"></i></a>
+                                <a href="#" class="bg-white w-6 h-6 rounded-sm flex items-center justify-center hover:bg-gray-200" style="color:#1A56DB;" rel="nofollow"><i class="fa-brands fa-linkedin-in text-[10px]"></i></a>
+                                <a href="#" class="bg-white w-6 h-6 rounded-sm flex items-center justify-center hover:bg-gray-200" style="color:#1A56DB;" rel="nofollow"><i class="fa-brands fa-instagram text-[10px]"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Physio Service -->
+                        <div>
+                            <h5 class="font-bold text-white mb-2 text-sm">Physiotherapy</h5>
+                            <p class="mb-2"><i class="fa-solid fa-person-walking mr-1 text-xs"></i> Musculoskeletal Therapy<br>Sports Rehab<br>Neuro Physio &amp; More</p>
+                            <p class="mb-1"><i class="fa-solid fa-envelope mr-1 text-xs"></i> physio@alafiapointwellnessclinic.ug</p>
+                            <p class="mb-3"><i class="fa-solid fa-phone mr-1 text-xs"></i> +256 700 000 001</p>
+                            <div class="flex space-x-2">
+                                <a href="#" class="bg-white w-6 h-6 rounded-sm flex items-center justify-center hover:bg-gray-200" style="color:#1A56DB;" rel="nofollow"><i class="fa-brands fa-facebook-f text-[10px]"></i></a>
+                                <a href="#" class="bg-white w-6 h-6 rounded-sm flex items-center justify-center hover:bg-gray-200" style="color:#1A56DB;" rel="nofollow"><i class="fa-brands fa-twitter text-[10px]"></i></a>
+                                <a href="#" class="bg-white w-6 h-6 rounded-sm flex items-center justify-center hover:bg-gray-200" style="color:#1A56DB;" rel="nofollow"><i class="fa-brands fa-linkedin-in text-[10px]"></i></a>
+                                <a href="#" class="bg-white w-6 h-6 rounded-sm flex items-center justify-center hover:bg-gray-200" style="color:#1A56DB;" rel="nofollow"><i class="fa-brands fa-instagram text-[10px]"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Nutrition Service -->
+                        <div>
+                            <h5 class="font-bold text-white mb-2 text-sm">Nutrition &amp; Dietetics</h5>
+                            <p class="mb-2"><i class="fa-solid fa-apple-whole mr-1 text-xs"></i> Weight Management<br>Chronic Disease Nutrition<br>Sports &amp; Wellness Diet</p>
+                            <p class="mb-1"><i class="fa-solid fa-envelope mr-1 text-xs"></i> nutrition@alafiapointwellnessclinic.ug</p>
+                            <p class="mb-3"><i class="fa-solid fa-phone mr-1 text-xs"></i> +256 700 000 002</p>
+                            <div class="flex space-x-2">
+                                <a href="#" class="bg-white w-6 h-6 rounded-sm flex items-center justify-center hover:bg-gray-200" style="color:#2EAA4A;" rel="nofollow"><i class="fa-brands fa-facebook-f text-[10px]"></i></a>
+                                <a href="#" class="bg-white w-6 h-6 rounded-sm flex items-center justify-center hover:bg-gray-200" style="color:#2EAA4A;" rel="nofollow"><i class="fa-brands fa-twitter text-[10px]"></i></a>
+                                <a href="#" class="bg-white w-6 h-6 rounded-sm flex items-center justify-center hover:bg-gray-200" style="color:#2EAA4A;" rel="nofollow"><i class="fa-brands fa-linkedin-in text-[10px]"></i></a>
+                                <a href="#" class="bg-white w-6 h-6 rounded-sm flex items-center justify-center hover:bg-gray-200" style="color:#2EAA4A;" rel="nofollow"><i class="fa-brands fa-instagram text-[10px]"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-6 text-center text-xs text-gray-300" style="border-top:1px solid #1A56DB;">
+                <p>Copyright &copy; 2026 Alafia Wellness Clinic. All Rights Reserved. | Lukuli Rd, Kampala, Uganda</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
