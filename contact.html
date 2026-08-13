@@ -111,7 +111,7 @@
             <!-- Contact Form -->
             <div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
                 <h3 class="text-2xl font-heading font-bold mb-6" style="color:#0D2E6E;">Send Us a Message</h3>
-                <form action="https://formsubmit.co/Alafiapoint@gmail.com" method="POST" class="space-y-5">
+                <form action="https://formsubmit.co/Alafiapoint@gmail.com" method="POST" class="space-y-5" id="contactForm">
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                         <div><label class="block text-sm font-medium text-gray-700 mb-1">First Name</label><input type="text" name="first_name" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500" placeholder="First name"></div>
                         <div><label class="block text-sm font-medium text-gray-700 mb-1">Last Name</label><input type="text" name="last_name" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500" placeholder="Last name"></div>
@@ -136,11 +136,55 @@
                     </div>
                     <input type="hidden" name="_subject" value="New Contact Form Submission from Alafia Point Website">
                     <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_replyto" value="{{ email }}">
                     <button type="submit" class="w-full text-white font-medium py-3 rounded-lg transition" style="background-color:#1A56DB;">Send Message</button>
                 </form>
             </div>
         </div>
     </section>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+        <div class="bg-white rounded-2xl p-8 max-w-md mx-4 text-center">
+            <div class="w-16 h-16 mx-auto rounded-full flex items-center justify-center text-white text-3xl mb-4" style="background-color:#2EAA4A;">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h3 class="text-2xl font-heading font-bold mb-2" style="color:#0D2E6E;">Message Sent!</h3>
+            <p class="text-gray-600 mb-6">Thank you for contacting us. We'll get back to you shortly.</p>
+            <button onclick="closeModal()" class="text-white font-medium px-8 py-3 rounded-full transition" style="background-color:#1A56DB;">Close</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const form = this;
+            const formData = new FormData(form);
+            
+            fetch(form.action, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (response.ok) {
+                    document.getElementById('successModal').classList.remove('hidden');
+                    document.getElementById('successModal').classList.add('flex');
+                    form.reset();
+                } else {
+                    alert('There was an error sending your message. Please try again.');
+                }
+            })
+            .catch(error => {
+                alert('There was an error sending your message. Please try again.');
+            });
+        });
+
+        function closeModal() {
+            document.getElementById('successModal').classList.add('hidden');
+            document.getElementById('successModal').classList.remove('flex');
+        }
+    </script>
 
     <!-- Map Placeholder -->
     <section class="py-0 bg-gray-100">
