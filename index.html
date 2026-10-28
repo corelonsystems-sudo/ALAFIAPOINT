@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,10 +15,10 @@
                 extend: {
                     colors: {
                         brand: {
-                            purple: '#1A56DB',
+                            purple: '#0D2E6E',
                             navy: '#0D2E6E',
-                            blue: '#1A56DB',
-                            teal: '#2EAA4A',
+                            blue: '#0D2E6E',
+                            teal: '#0F6B3D',
                             lightBg: '#F0F7F1'
                         }
                     },
@@ -38,6 +38,8 @@
             }
         }
     </script>
+    <link rel="stylesheet" href="css/mobile.css">
+    <script src="js/mobile-menu.js" defer></script>
     <style>
         body {
             font-family: 'Heebo', sans-serif;
@@ -64,7 +66,7 @@
             background-size: 20px 20px;
         }
         .bg-wave-teal {
-            background: linear-gradient(135deg, #2EAA4A 0%, #1A56DB 100%);
+            background: linear-gradient(135deg, #0F6B3D 0%, #0D2E6E 100%);
         }
         /* Curve mask for the bottom of sections if needed */
         .curve-bottom {
@@ -79,25 +81,25 @@
 <body class="antialiased">
 
     <!-- Marquee Banner -->
-    <div class="bg-brand-teal text-white text-sm py-1.5 font-medium marquee-container" style="background-color:#2EAA4A;">
+    <div class="bg-brand-teal text-white text-sm py-1.5 font-medium marquee-container" style="background-color:#0F6B3D;">
         <div class="marquee-content px-4">
-            Your wellness journey starts here — expert Physiotherapy &amp; Nutrition care in the heart of Kampala, Uganda. Visit us at Makindye Lukuli Rd. Call 0770 790 055 or 0705 180 476 to book your appointment today.
+            Your wellness journey starts here â€” expert Physiotherapy &amp; Nutrition care in the heart of Kampala, Uganda. Visit us at Makindye Lukuli Rd. Call 0770 790 055 or 0705 180 476 to book your appointment today.
         </div>
     </div>
 
     <!-- Contact Top Bar -->
-    <div class="text-white text-sm py-2" style="background-color:#1A56DB;">
+    <div class="text-white text-sm py-2" style="background-color:#0D2E6E;">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center">
             <div class="flex items-center space-x-2">
                 <i class="fa-regular fa-envelope"></i>
                 <span>Alafiapoint@gmail.com</span>
             </div>
             <div class="flex items-center space-x-3 mt-2 sm:mt-0">
-                <a href="#" class="bg-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-gray-100 transition" style="color:#1A56DB;" rel="nofollow"><i class="fa-brands fa-whatsapp text-xs"></i></a>
-                <a href="#" class="bg-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-gray-100 transition" style="color:#1A56DB;" rel="nofollow"><i class="fa-brands fa-facebook-f text-xs"></i></a>
-                <a href="#" class="bg-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-gray-100 transition" style="color:#1A56DB;" rel="nofollow"><i class="fa-brands fa-instagram text-xs"></i></a>
-                <a href="#" class="bg-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-gray-100 transition" style="color:#1A56DB;" rel="nofollow"><i class="fa-brands fa-linkedin-in text-xs"></i></a>
-                <a href="#" class="bg-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-gray-100 transition" style="color:#1A56DB;" rel="nofollow"><i class="fa-brands fa-twitter text-xs"></i></a>
+                <a href="#" class="bg-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-gray-100 transition" style="color:#0D2E6E;" rel="nofollow"><i class="fa-brands fa-whatsapp text-xs"></i></a>
+                <a href="#" class="bg-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-gray-100 transition" style="color:#0D2E6E;" rel="nofollow"><i class="fa-brands fa-facebook-f text-xs"></i></a>
+                <a href="#" class="bg-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-gray-100 transition" style="color:#0D2E6E;" rel="nofollow"><i class="fa-brands fa-instagram text-xs"></i></a>
+                <a href="#" class="bg-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-gray-100 transition" style="color:#0D2E6E;" rel="nofollow"><i class="fa-brands fa-linkedin-in text-xs"></i></a>
+                <a href="#" class="bg-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-gray-100 transition" style="color:#0D2E6E;" rel="nofollow"><i class="fa-brands fa-twitter text-xs"></i></a>
             </div>
         </div>
     </div>
@@ -106,29 +108,42 @@
     <header class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <div class="flex-shrink-0">
-                <!-- Asset #1: Logo -->
                 <img src="Screenshot_2025-09-08_000950_c4CXhf5.png" alt="Alafia Point Wellness Clinic Logo" class="h-12">
             </div>
-            <nav class="hidden md:flex space-x-6 text-[15px] font-medium" style="color:#0D2E6E;">
-                <a href="index.html" style="color:#1A56DB;" rel="nofollow">Home</a>
-                <a href="about.html" class="hover:text-green-600 transition" rel="nofollow">About</a>
-                <a href="services.html" class="hover:text-green-600 transition" rel="nofollow">Our Services</a>
-                <a href="physiotherapy.html" class="hover:text-green-600 transition" rel="nofollow">Physiotherapy</a>
-                <a href="nutrition.html" class="hover:text-green-600 transition" rel="nofollow">Nutrition</a>
-                <a href="contact.html" class="hover:text-green-600 transition" rel="nofollow">Contact Us</a>
-                <a href="book-appointment.html" class="hover:text-green-600 transition" rel="nofollow">Book Appointment</a>
+            <nav class="desktop-nav hidden md:flex space-x-6 text-[15px] font-medium" style="color:#0D2E6E;">
+                <a href="index.html" style="color:#0D2E6E;" rel="nofollow">Home</a>
+                <a href="about.html" class="hover:text-#0F6B3D transition" rel="nofollow">About</a>
+                <a href="services.html" class="hover:text-#0F6B3D transition" rel="nofollow">Our Services</a>
+                <a href="physiotherapy.html" class="hover:text-#0F6B3D transition" rel="nofollow">Physiotherapy</a>
+                <a href="nutrition.html" class="hover:text-#0F6B3D transition" rel="nofollow">Nutrition</a>
+                <a href="contact.html" class="hover:text-#0F6B3D transition" rel="nofollow">Contact Us</a>
+                <a href="book-appointment.html" class="hover:text-#0F6B3D transition" rel="nofollow">Book Appointment</a>
             </nav>
             <div class="hidden lg:flex items-center space-x-3">
-                <a href="book-appointment.html" class="text-white px-5 py-2 rounded-full text-sm font-medium flex items-center space-x-2 transition" style="background-color:#2EAA4A;" rel="nofollow">
+                <a href="book-appointment.html" class="text-white px-5 py-2 rounded-full text-sm font-medium flex items-center space-x-2 transition" style="background-color:#0F6B3D;" rel="nofollow">
                     <i class="fa-solid fa-calendar-check"></i>
                     <span>Book Now</span>
                 </a>
-                <a href="contact.html" class="text-white px-5 py-2 rounded-full text-sm font-medium flex items-center space-x-2 transition" style="background-color:#1A56DB;" rel="nofollow">
+                <a href="contact.html" class="text-white px-5 py-2 rounded-full text-sm font-medium flex items-center space-x-2 transition" style="background-color:#0D2E6E;" rel="nofollow">
                     <i class="fa-solid fa-phone"></i>
                     <span>Contact Us</span>
                 </a>
             </div>
+            <button class="mobile-menu-toggle md:hidden" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
+        <nav class="mobile-menu-panel md:hidden" aria-label="Mobile navigation">
+            <a href="index.html" style="color:#0D2E6E;">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Our Services</a>
+            <a href="physiotherapy.html">Physiotherapy</a>
+            <a href="nutrition.html">Nutrition</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="book-appointment.html" class="mobile-highlight">Book Appointment</a>
+        </nav>
     </header>
 
     <!-- Hero Section -->
@@ -136,15 +151,15 @@
         <div class="absolute inset-0 hero-bg-overlay"></div>
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10 flex">
             <div class="max-w-2xl w-full">
-                <p class="font-semibold tracking-wider text-sm mb-4 uppercase" style="color:#2EAA4A;">Alafia Point Wellness Clinic — Makindye Lukuli Rd, Kampala</p>
-                <h1 class="text-h1 font-heading font-bold leading-[1.1] mb-6" style="color:#1A56DB;">
+                <p class="font-semibold tracking-wider text-sm mb-4 uppercase" style="color:#0F6B3D;">Alafia Point Wellness Clinic â€” Makindye Lukuli Rd, Kampala</p>
+                <h1 class="text-h1 font-heading font-bold leading-[1.1] mb-6" style="color:#0D2E6E;">
                     PAIN RELIEF,<br>REHABILITATION &amp;<br>NUTRITION CARE
                 </h1>
                 <p class="text-body text-gray-600 mb-8 max-w-lg">
                     Orthopedic manual therapy, sports injury rehabilitation, neurological physiotherapy, and personalised nutrition plans designed to help you move well, eat well, and live healthier.
                 </p>
                 <div class="flex items-center space-x-4">
-                    <a href="book-appointment.html" class="w-12 h-12 rounded-full flex items-center justify-center text-white shadow-lg hover:scale-105 transition transform" style="background-color:#2EAA4A;" rel="nofollow">
+                    <a href="book-appointment.html" class="w-12 h-12 rounded-full flex items-center justify-center text-white shadow-lg hover:scale-105 transition transform" style="background-color:#0F6B3D;" rel="nofollow">
                         <i class="fa-solid fa-chevron-right"></i>
                     </a>
                     <a href="book-appointment.html" class="font-medium" style="color:#0D2E6E;">Book an Appointment</a>
@@ -154,7 +169,7 @@
     </section>
 
     <!-- About Section (Why Choose) -->
-    <section class="py-20 bg-white relative overflow-hidden text-center sm:text-left">
+    <section class="py-20 bg-white relative overflow-hidden text-center sm:text-left why-choose-us">
         <!-- Background Asset #10 vaguely applied as soft decoration if needed, but keeping clean -->
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -171,33 +186,35 @@
                     <p class="text-body text-gray-600 mb-8">
                         At Alafia Point, we combine hands-on physiotherapy with practical nutrition guidance to deliver whole-person care. From pain management and mobility restoration to personalised meal planning and digestive health support, every programme is tailored around your goals.
                     </p>
-                    <a href="about.html" class="inline-block font-semibold px-8 py-3 rounded-full text-sm uppercase tracking-wider transition" style="background-color:#E8F5E9; color:#2EAA4A;" rel="nofollow">
+                    <a href="about.html" class="inline-block font-semibold px-8 py-3 rounded-full text-sm uppercase tracking-wider transition" style="background-color:#E8F5E9; color:#0F6B3D;" rel="nofollow">
                         Learn More
                     </a>
                 </div>
             </div>
 
             <!-- Stats Row -->
-            <div class="mt-16 pt-10 border-t border-gray-100 grid grid-cols-2 md:grid-cols-5 gap-6 text-center" style="color:#0D2E6E;">
-                <div>
-                    <div class="text-[24px] font-bold font-heading mb-1" style="color:#1A56DB;">OMPT</div>
-                    <div class="text-sm text-gray-500 font-medium">Orthopedic Manual Therapy</div>
-                </div>
-                <div>
-                    <div class="text-[24px] font-bold font-heading mb-1" style="color:#2EAA4A;">Neuro Physio</div>
-                    <div class="text-sm text-gray-500 font-medium">Stroke, spinal cord, and balance support</div>
-                </div>
-                <div>
-                    <div class="text-[24px] font-bold font-heading mb-1" style="color:#1A56DB;">Sports Rehab</div>
-                    <div class="text-sm text-gray-500 font-medium">Return-to-play recovery programmes</div>
-                </div>
-                <div>
-                    <div class="text-[24px] font-bold font-heading mb-1" style="color:#2EAA4A;">Nutrition Plans</div>
-                    <div class="text-sm text-gray-500 font-medium">Weight, diabetic, and hypertension care</div>
-                </div>
-                <div>
-                    <div class="text-[24px] font-bold font-heading mb-1" style="color:#1A56DB;">Digestive &amp; Family</div>
-                    <div class="text-sm text-gray-500 font-medium">Gut health, maternal, and child nutrition</div>
+            <div class="mt-16 pt-10 border-t border-gray-100 why-stats-carousel" style="color:#0D2E6E;">
+                <div class="why-stats-track">
+                    <div class="why-stat-card">
+                        <div class="text-[24px] font-bold font-heading mb-1" style="color:#0D2E6E;">OMPT</div>
+                        <div class="text-sm text-gray-500 font-medium">Orthopedic Manual Therapy</div>
+                    </div>
+                    <div class="why-stat-card">
+                        <div class="text-[24px] font-bold font-heading mb-1" style="color:#0F6B3D;">Neuro Physio</div>
+                        <div class="text-sm text-gray-500 font-medium">Stroke, spinal cord, and balance support</div>
+                    </div>
+                    <div class="why-stat-card">
+                        <div class="text-[24px] font-bold font-heading mb-1" style="color:#0D2E6E;">Sports Rehab</div>
+                        <div class="text-sm text-gray-500 font-medium">Return-to-play recovery programmes</div>
+                    </div>
+                    <div class="why-stat-card">
+                        <div class="text-[24px] font-bold font-heading mb-1" style="color:#0F6B3D;">Nutrition Plans</div>
+                        <div class="text-sm text-gray-500 font-medium">Weight, diabetic, and hypertension care</div>
+                    </div>
+                    <div class="why-stat-card">
+                        <div class="text-[24px] font-bold font-heading mb-1" style="color:#0D2E6E;">Digestive &amp; Family</div>
+                        <div class="text-sm text-gray-500 font-medium">Gut health, maternal, and child nutrition</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -213,8 +230,8 @@
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
                 <!-- Card 1 -->
-                <div class="bg-white text-center p-10 rounded-brand shadow-lg" style="border-top:4px solid #2EAA4A;">
-                    <div class="w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6 text-3xl" style="border:2px solid #1A56DB; color:#1A56DB;">
+                <div class="bg-white text-center p-10 rounded-brand shadow-lg" style="border-top:4px solid #0F6B3D;">
+                    <div class="w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6 text-3xl" style="border:2px solid #0D2E6E; color:#0D2E6E;">
                         <i class="fa-solid fa-house-medical"></i>
                     </div>
                     <h3 class="text-xl font-heading font-bold mb-4" style="color:#0D2E6E;">Physiotherapy</h3>
@@ -223,8 +240,8 @@
                     </p>
                 </div>
                 <!-- Card 2 -->
-                <div class="bg-white text-center p-10 rounded-brand shadow-lg" style="border-top:4px solid #1A56DB;">
-                    <div class="w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6 text-3xl" style="border:2px solid #2EAA4A; color:#2EAA4A;">
+                <div class="bg-white text-center p-10 rounded-brand shadow-lg" style="border-top:4px solid #0D2E6E;">
+                    <div class="w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6 text-3xl" style="border:2px solid #0F6B3D; color:#0F6B3D;">
                         <i class="fa-solid fa-stethoscope"></i>
                     </div>
                     <h3 class="text-xl font-heading font-bold mb-4" style="color:#0D2E6E;">Nutrition &amp; Dietetics</h3>
@@ -233,8 +250,8 @@
                     </p>
                 </div>
                 <!-- Card 3 -->
-                <div class="bg-white text-center p-10 rounded-brand shadow-lg" style="border-top:4px solid #2EAA4A;">
-                    <div class="w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6 text-3xl" style="border:2px solid #1A56DB; color:#1A56DB;">
+                <div class="bg-white text-center p-10 rounded-brand shadow-lg" style="border-top:4px solid #0F6B3D;">
+                    <div class="w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6 text-3xl" style="border:2px solid #0D2E6E; color:#0D2E6E;">
                         <i class="fa-solid fa-hand-holding-heart"></i>
                     </div>
                     <h3 class="text-xl font-heading font-bold mb-4" style="color:#0D2E6E;">Exercise &amp; Recovery Programmes</h3>
@@ -244,7 +261,7 @@
                 </div>
             </div>
 
-            <a href="services.html" class="inline-block text-white font-medium px-8 py-3 rounded-full transition shadow-md" style="background-color:#1A56DB;" rel="nofollow">
+            <a href="services.html" class="inline-block text-white font-medium px-8 py-3 rounded-full transition shadow-md" style="background-color:#0D2E6E;" rel="nofollow">
                 ALL SERVICES
             </a>
         </div>
@@ -266,8 +283,8 @@
                         We support clients with meal planning, weight management, gut and digestive health concerns, balanced meal guidance, and sustainable healthy eating habits tailored to daily life.
                     </p>
                     <div class="flex flex-wrap gap-4">
-                        <a href="nutrition.html" class="text-white font-medium px-8 py-3 rounded-full transition shadow-md" style="background-color:#2EAA4A;" rel="nofollow">Explore Nutrition Services</a>
-                        <a href="book-appointment.html" class="font-medium px-8 py-3 rounded-full transition border" style="border-color:#1A56DB; color:#1A56DB;" rel="nofollow">Book a Consultation</a>
+                        <a href="nutrition.html" class="text-white font-medium px-8 py-3 rounded-full transition shadow-md" style="background-color:#0F6B3D;" rel="nofollow">Explore Nutrition Services</a>
+                        <a href="book-appointment.html" class="font-medium px-8 py-3 rounded-full transition border" style="border-color:#0D2E6E; color:#0D2E6E;" rel="nofollow">Book a Consultation</a>
                     </div>
                 </div>
             </div>
@@ -284,7 +301,7 @@
                     <p class="text-body text-gray-600 mb-8">
                         Alafia Point Wellness Clinic serves clients from Makindye Lukuli Rd with patient-centred physiotherapy and nutrition care. We focus on listening carefully, assessing thoroughly, and giving you realistic support you can follow beyond the clinic.
                     </p>
-                    <a href="services.html" class="inline-block text-white font-medium px-8 py-3 rounded-full transition mb-8 shadow-md" style="background-color:#2EAA4A;" rel="nofollow">
+                    <a href="services.html" class="inline-block text-white font-medium px-8 py-3 rounded-full transition mb-8 shadow-md" style="background-color:#0F6B3D;" rel="nofollow">
                         Discover More
                     </a>
                     <!-- Asset #6: Stomatology Nurse -->
@@ -293,8 +310,8 @@
                 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <!-- Commitment 1 -->
-                    <div class="bg-white p-8 rounded-brand shadow-sm text-center" style="border-top:3px solid #2EAA4A;">
-                        <div class="w-16 h-16 mx-auto rounded-brand flex items-center justify-center text-white mb-6 text-2xl rotate-3" style="background-color:#1A56DB;">
+                    <div class="bg-white p-8 rounded-brand shadow-sm text-center" style="border-top:3px solid #0F6B3D;">
+                        <div class="w-16 h-16 mx-auto rounded-brand flex items-center justify-center text-white mb-6 text-2xl rotate-3" style="background-color:#0D2E6E;">
                             <i class="fa-solid fa-handshake"></i>
                         </div>
                         <h3 class="text-lg font-heading font-bold mb-3" style="color:#0D2E6E;">Patient-Centred Care</h3>
@@ -303,8 +320,8 @@
                         </p>
                     </div>
                     <!-- Commitment 2 -->
-                    <div class="bg-white p-8 rounded-brand shadow-sm text-center" style="border-top:3px solid #1A56DB;">
-                        <div class="w-16 h-16 mx-auto rounded-brand flex items-center justify-center text-white mb-6 text-2xl -rotate-3" style="background-color:#2EAA4A;">
+                    <div class="bg-white p-8 rounded-brand shadow-sm text-center" style="border-top:3px solid #0D2E6E;">
+                        <div class="w-16 h-16 mx-auto rounded-brand flex items-center justify-center text-white mb-6 text-2xl -rotate-3" style="background-color:#0F6B3D;">
                             <i class="fa-regular fa-gem"></i>
                         </div>
                         <h3 class="text-lg font-heading font-bold mb-3" style="color:#0D2E6E;">Clinical Excellence</h3>
@@ -313,18 +330,18 @@
                         </p>
                     </div>
                     <!-- Commitment 3 -->
-                    <div class="bg-white p-8 rounded-brand shadow-sm text-center" style="border-top:3px solid #2EAA4A;">
-                        <div class="w-16 h-16 mx-auto rounded-brand flex items-center justify-center text-white mb-6 text-2xl rotate-3" style="background-color:#1A56DB;">
+                    <div class="bg-white p-8 rounded-brand shadow-sm text-center" style="border-top:3px solid #0F6B3D;">
+                        <div class="w-16 h-16 mx-auto rounded-brand flex items-center justify-center text-white mb-6 text-2xl rotate-3" style="background-color:#0D2E6E;">
                             <i class="fa-solid fa-award"></i>
                         </div>
                         <h3 class="text-lg font-heading font-bold mb-3" style="color:#0D2E6E;">Holistic Approach</h3>
                         <p class="text-sm text-gray-500 leading-relaxed">
-                            We address the whole person — not just the symptom. By integrating physiotherapy with nutrition, we help you achieve sustainable, long-term health outcomes.
+                            We address the whole person â€” not just the symptom. By integrating physiotherapy with nutrition, we help you achieve sustainable, long-term health outcomes.
                         </p>
                     </div>
                     <!-- Commitment 4 -->
-                    <div class="bg-white p-8 rounded-brand shadow-sm text-center" style="border-top:3px solid #1A56DB;">
-                        <div class="w-16 h-16 mx-auto rounded-brand flex items-center justify-center text-white mb-6 text-2xl -rotate-3" style="background-color:#2EAA4A;">
+                    <div class="bg-white p-8 rounded-brand shadow-sm text-center" style="border-top:3px solid #0D2E6E;">
+                        <div class="w-16 h-16 mx-auto rounded-brand flex items-center justify-center text-white mb-6 text-2xl -rotate-3" style="background-color:#0F6B3D;">
                             <i class="fa-solid fa-shield-halved"></i>
                         </div>
                         <h3 class="text-lg font-heading font-bold mb-3" style="color:#0D2E6E;">Integrity & Trust</h3>
@@ -338,9 +355,9 @@
     </section>
 
     <!-- Mission Statement Section -->
-    <section class="py-20 text-white relative text-center" style="background-color:#1A56DB;">
+    <section class="py-20 text-white relative text-center" style="background-color:#0D2E6E;">
         <div class="relative max-w-4xl mx-auto px-4 z-10">
-            <div class="mx-auto mb-8 text-5xl" style="color:#2EAA4A;"><i class="fa-solid fa-quote-left"></i></div>
+            <div class="mx-auto mb-8 text-5xl" style="color:#0F6B3D;"><i class="fa-solid fa-quote-left"></i></div>
             <h2 class="text-h2 font-heading font-bold mb-6">Our Mission Statement</h2>
             <p class="text-xl font-medium opacity-90 leading-relaxed">
                 To restore health, prevent pain from limiting daily life, and empower every patient through compassionate physiotherapy and personalised nutrition care. At Alafia Point Wellness Clinic, we believe in helping every person become <em>a healthy you</em>.
@@ -376,7 +393,7 @@
                     Conditions and Goals We Commonly Support
                 </h2>
                 <p class="text-[15px] text-gray-700 max-w-3xl mx-auto leading-relaxed">
-                    The clinic posters in your root assets highlight the real issues we support every day — from back, neck, shoulder, knee, and joint pain to weight management, diabetic care, hypertension support, and gastrointestinal health.
+                    The clinic posters in your root assets highlight the real issues we support every day â€” from back, neck, shoulder, knee, and joint pain to weight management, diabetic care, hypertension support, and gastrointestinal health.
                 </p>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
@@ -384,27 +401,27 @@
                     <img src="Picture2.png" alt="Conditions treated by Alafia Point Wellness Clinic" class="rounded-3xl shadow-xl w-full">
                 </div>
                 <div class="grid grid-cols-2 gap-4">
-                    <div class="bg-white rounded-2xl p-5 shadow-sm" style="border-left:4px solid #2EAA4A;"><h3 class="font-heading font-bold mb-2" style="color:#0D2E6E;">Pain &amp; Injury</h3><p class="text-sm text-gray-600">Back pain, neck pain, shoulder pain, knee pain, joint pain, strains, sprains, and soft tissue injuries.</p></div>
-                    <div class="bg-white rounded-2xl p-5 shadow-sm" style="border-left:4px solid #1A56DB;"><h3 class="font-heading font-bold mb-2" style="color:#0D2E6E;">Sports Recovery</h3><p class="text-sm text-gray-600">Sports-related injuries, post-operative rehab, nerve pain, and return-to-play support.</p></div>
-                    <div class="bg-white rounded-2xl p-5 shadow-sm" style="border-left:4px solid #2EAA4A;"><h3 class="font-heading font-bold mb-2" style="color:#0D2E6E;">Weight &amp; Lifestyle</h3><p class="text-sm text-gray-600">Weight loss and gain, sustainable eating habits, and balanced meal guidance.</p></div>
-                    <div class="bg-white rounded-2xl p-5 shadow-sm" style="border-left:4px solid #1A56DB;"><h3 class="font-heading font-bold mb-2" style="color:#0D2E6E;">Family Nutrition</h3><p class="text-sm text-gray-600">Pregnant and lactating programmes, child nutrition care, diabetic care, and gastrointestinal health.</p></div>
+                    <div class="bg-white rounded-2xl p-5 shadow-sm" style="border-left:4px solid #0F6B3D;"><h3 class="font-heading font-bold mb-2" style="color:#0D2E6E;">Pain &amp; Injury</h3><p class="text-sm text-gray-600">Back pain, neck pain, shoulder pain, knee pain, joint pain, strains, sprains, and soft tissue injuries.</p></div>
+                    <div class="bg-white rounded-2xl p-5 shadow-sm" style="border-left:4px solid #0D2E6E;"><h3 class="font-heading font-bold mb-2" style="color:#0D2E6E;">Sports Recovery</h3><p class="text-sm text-gray-600">Sports-related injuries, post-operative rehab, nerve pain, and return-to-play support.</p></div>
+                    <div class="bg-white rounded-2xl p-5 shadow-sm" style="border-left:4px solid #0F6B3D;"><h3 class="font-heading font-bold mb-2" style="color:#0D2E6E;">Weight &amp; Lifestyle</h3><p class="text-sm text-gray-600">Weight loss and gain, sustainable eating habits, and balanced meal guidance.</p></div>
+                    <div class="bg-white rounded-2xl p-5 shadow-sm" style="border-left:4px solid #0D2E6E;"><h3 class="font-heading font-bold mb-2" style="color:#0D2E6E;">Family Nutrition</h3><p class="text-sm text-gray-600">Pregnant and lactating programmes, child nutrition care, diabetic care, and gastrointestinal health.</p></div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="py-10" style="background-color:#2EAA4A;">
+    <section class="py-10" style="background-color:#0F6B3D;">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-white">
             <h3 class="text-xl font-heading font-semibold mb-4 md:mb-0">Call us or book your consultation with Alafia Point Wellness Clinic today.</h3>
-            <a href="book-appointment.html" class="text-white uppercase text-sm font-medium px-8 py-3 rounded-full transition" style="background-color:#1A56DB;" rel="nofollow">
+            <a href="book-appointment.html" class="text-white uppercase text-sm font-medium px-8 py-3 rounded-full transition" style="background-color:#0D2E6E;" rel="nofollow">
                 Book Now
             </a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="text-white pt-16 pb-8" style="background-color:#0D2E6E; border-top:4px solid #2EAA4A;">
+    <footer class="text-white pt-16 pb-8" style="background-color:#0D2E6E; border-top:4px solid #0F6B3D;">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
                 
@@ -433,22 +450,22 @@
                 <div>
                     <h4 class="text-lg font-heading font-bold mb-6">Contact Us</h4>
                     <div class="space-y-3 text-sm text-gray-200">
-                        <p><i class="fa-solid fa-location-dot mr-2" style="color:#2EAA4A;"></i> Makindye Lukuli Rd, Kampala, Uganda</p>
-                        <p><i class="fa-solid fa-phone mr-2" style="color:#2EAA4A;"></i> 0770 790 055 / 0705 180 476</p>
-                        <p><i class="fa-solid fa-envelope mr-2" style="color:#2EAA4A;"></i> Alafiapoint@gmail.com</p>
-                        <p><i class="fa-solid fa-clock mr-2" style="color:#2EAA4A;"></i> Mon–Fri: 8am–6pm | Sat: 9am–2pm</p>
+                        <p><i class="fa-solid fa-location-dot mr-2" style="color:#0F6B3D;"></i> Makindye Lukuli Rd, Kampala, Uganda</p>
+                        <p><i class="fa-solid fa-phone mr-2" style="color:#0F6B3D;"></i> 0770 790 055 / 0705 180 476</p>
+                        <p><i class="fa-solid fa-envelope mr-2" style="color:#0F6B3D;"></i> Alafiapoint@gmail.com</p>
+                        <p><i class="fa-solid fa-clock mr-2" style="color:#0F6B3D;"></i> Monâ€“Fri: 8amâ€“6pm | Sat: 9amâ€“2pm</p>
                     </div>
                     <div class="flex space-x-3 mt-4">
-                        <a href="#" class="bg-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-gray-200" style="color:#1A56DB;" rel="nofollow"><i class="fa-brands fa-facebook-f text-xs"></i></a>
-                        <a href="#" class="bg-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-gray-200" style="color:#1A56DB;" rel="nofollow"><i class="fa-brands fa-twitter text-xs"></i></a>
-                        <a href="#" class="bg-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-gray-200" style="color:#1A56DB;" rel="nofollow"><i class="fa-brands fa-instagram text-xs"></i></a>
-                        <a href="#" class="bg-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-gray-200" style="color:#1A56DB;" rel="nofollow"><i class="fa-brands fa-whatsapp text-xs"></i></a>
+                        <a href="#" class="bg-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-gray-200" style="color:#0D2E6E;" rel="nofollow"><i class="fa-brands fa-facebook-f text-xs"></i></a>
+                        <a href="#" class="bg-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-gray-200" style="color:#0D2E6E;" rel="nofollow"><i class="fa-brands fa-twitter text-xs"></i></a>
+                        <a href="#" class="bg-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-gray-200" style="color:#0D2E6E;" rel="nofollow"><i class="fa-brands fa-instagram text-xs"></i></a>
+                        <a href="#" class="bg-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-gray-200" style="color:#0D2E6E;" rel="nofollow"><i class="fa-brands fa-whatsapp text-xs"></i></a>
                     </div>
                 </div>
 
             </div>
 
-            <div class="pt-6 text-center text-xs text-gray-300" style="border-top:1px solid #1A56DB;">
+            <div class="pt-6 text-center text-xs text-gray-300" style="border-top:1px solid #0D2E6E;">
                 <p>Copyright &copy; 2026 Alafia Point Wellness Clinic. All Rights Reserved. | Makindye Lukuli Rd, Kampala, Uganda</p>
             </div>
         </div>
@@ -456,3 +473,5 @@
 
 </body>
 </html>
+
+

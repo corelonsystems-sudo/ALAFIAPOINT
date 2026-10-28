@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,9 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
-            theme: { extend: { colors: { brand: { navy: '#0D2E6E', blue: '#1A56DB', teal: '#2EAA4A' } }, fontFamily: { sans: ['Heebo','sans-serif'], heading: ['Poppins','sans-serif'] } } }
+            theme: { extend: { colors: { brand: { navy: '#0D2E6E', blue: '#0D2E6E', teal: '#0F6B3D' } }, fontFamily: { sans: ['Heebo','sans-serif'], heading: ['Poppins','sans-serif'] } } }
         }
     </script>
+    <link rel="stylesheet" href="css/mobile.css">
+    <script src="js/mobile-menu.js" defer></script>
     <style>
         body { font-family: 'Heebo', sans-serif; color: #4A5568; }
         h1,h2,h3,h4,h5,h6 { font-family: 'Poppins', sans-serif; }
@@ -23,19 +25,19 @@
 <body class="antialiased">
 
     <!-- Marquee Banner -->
-    <div class="text-white text-sm py-1.5 font-medium marquee-container" style="background-color:#2EAA4A;">
-        <div class="marquee-content px-4">Your wellness journey starts here — expert Physiotherapy &amp; Nutrition care in the heart of Kampala, Uganda. Visit us at Makindye Lukuli Rd. Call 0770 790 055 or 0705 180 476 to book your appointment today.</div>
+    <div class="text-white text-sm py-1.5 font-medium marquee-container" style="background-color:#0F6B3D;">
+        <div class="marquee-content px-4">Your wellness journey starts here â€” expert Physiotherapy &amp; Nutrition care in the heart of Kampala, Uganda. Visit us at Makindye Lukuli Rd. Call 0770 790 055 or 0705 180 476 to book your appointment today.</div>
     </div>
 
     <!-- Contact Top Bar -->
-    <div class="text-white text-sm py-2" style="background-color:#1A56DB;">
+    <div class="text-white text-sm py-2" style="background-color:#0D2E6E;">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center">
             <div class="flex items-center space-x-2"><i class="fa-regular fa-envelope"></i><span>Alafiapoint@gmail.com</span></div>
             <div class="flex items-center space-x-3 mt-2 sm:mt-0">
-                <a href="#" class="bg-white rounded-full w-6 h-6 flex items-center justify-center" style="color:#1A56DB;"><i class="fa-brands fa-whatsapp text-xs"></i></a>
-                <a href="#" class="bg-white rounded-full w-6 h-6 flex items-center justify-center" style="color:#1A56DB;"><i class="fa-brands fa-facebook-f text-xs"></i></a>
-                <a href="#" class="bg-white rounded-full w-6 h-6 flex items-center justify-center" style="color:#1A56DB;"><i class="fa-brands fa-instagram text-xs"></i></a>
-                <a href="#" class="bg-white rounded-full w-6 h-6 flex items-center justify-center" style="color:#1A56DB;"><i class="fa-brands fa-twitter text-xs"></i></a>
+                <a href="#" class="bg-white rounded-full w-6 h-6 flex items-center justify-center" style="color:#0D2E6E;"><i class="fa-brands fa-whatsapp text-xs"></i></a>
+                <a href="#" class="bg-white rounded-full w-6 h-6 flex items-center justify-center" style="color:#0D2E6E;"><i class="fa-brands fa-facebook-f text-xs"></i></a>
+                <a href="#" class="bg-white rounded-full w-6 h-6 flex items-center justify-center" style="color:#0D2E6E;"><i class="fa-brands fa-instagram text-xs"></i></a>
+                <a href="#" class="bg-white rounded-full w-6 h-6 flex items-center justify-center" style="color:#0D2E6E;"><i class="fa-brands fa-twitter text-xs"></i></a>
             </div>
         </div>
     </div>
@@ -44,20 +46,34 @@
     <header class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <a href="index.html"><img src="Screenshot_2025-09-08_000950_c4CXhf5.png" alt="Alafia Point Wellness Clinic Logo" class="h-12"></a>
-            <nav class="hidden md:flex space-x-6 text-[15px] font-medium" style="color:#0D2E6E;">
-                <a href="index.html" class="hover:text-green-600 transition">Home</a>
-                <a href="about.html" class="hover:text-green-600 transition">About</a>
-                <a href="services.html" class="hover:text-green-600 transition">Our Services</a>
-                <a href="physiotherapy.html" class="hover:text-green-600 transition">Physiotherapy</a>
-                <a href="nutrition.html" class="hover:text-green-600 transition">Nutrition</a>
-                <a href="contact.html" class="hover:text-green-600 transition">Contact Us</a>
-                <a href="book-appointment.html" style="color:#1A56DB;">Book Appointment</a>
+            <nav class="desktop-nav hidden md:flex space-x-6 text-[15px] font-medium" style="color:#0D2E6E;">
+                <a href="index.html" class="hover:text-#0F6B3D transition">Home</a>
+                <a href="about.html" class="hover:text-#0F6B3D transition">About</a>
+                <a href="services.html" class="hover:text-#0F6B3D transition">Our Services</a>
+                <a href="physiotherapy.html" class="hover:text-#0F6B3D transition">Physiotherapy</a>
+                <a href="nutrition.html" class="hover:text-#0F6B3D transition">Nutrition</a>
+                <a href="contact.html" class="hover:text-#0F6B3D transition">Contact Us</a>
+                <a href="book-appointment.html" style="color:#0D2E6E;">Book Appointment</a>
             </nav>
             <div class="hidden lg:flex items-center space-x-3">
-                <a href="book-appointment.html" class="text-white px-5 py-2 rounded-full text-sm font-medium flex items-center space-x-2" style="background-color:#2EAA4A;"><i class="fa-solid fa-calendar-check"></i><span>Book Now</span></a>
-                <a href="contact.html" class="text-white px-5 py-2 rounded-full text-sm font-medium flex items-center space-x-2" style="background-color:#1A56DB;"><i class="fa-solid fa-phone"></i><span>Contact Us</span></a>
+                <a href="book-appointment.html" class="text-white px-5 py-2 rounded-full text-sm font-medium flex items-center space-x-2" style="background-color:#0F6B3D;"><i class="fa-solid fa-calendar-check"></i><span>Book Now</span></a>
+                <a href="contact.html" class="text-white px-5 py-2 rounded-full text-sm font-medium flex items-center space-x-2" style="background-color:#0D2E6E;"><i class="fa-solid fa-phone"></i><span>Contact Us</span></a>
             </div>
+            <button class="mobile-menu-toggle md:hidden" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
+        <nav class="mobile-menu-panel md:hidden" aria-label="Mobile navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Our Services</a>
+            <a href="physiotherapy.html">Physiotherapy</a>
+            <a href="nutrition.html">Nutrition</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="book-appointment.html" style="color:#0D2E6E;" class="mobile-highlight">Book Appointment</a>
+        </nav>
     </header>
 
     <!-- Page Banner -->
@@ -72,26 +88,26 @@
             
             <!-- Info -->
             <div class="lg:col-span-1">
-                <p class="text-sm font-bold uppercase tracking-widest mb-3" style="color:#2EAA4A;">Book With Us</p>
+                <p class="text-sm font-bold uppercase tracking-widest mb-3" style="color:#0F6B3D;">Book With Us</p>
                 <h2 class="text-3xl font-heading font-bold mb-6" style="color:#0D2E6E;">Schedule Your Visit</h2>
                 <p class="text-gray-600 leading-relaxed mb-8">Fill in the form and our team will confirm your appointment. We look forward to helping you on your wellness journey.</p>
 
                 <div class="space-y-5">
                     <div class="flex items-center space-x-4">
-                        <div class="w-10 h-10 rounded-full flex items-center justify-center text-white" style="background-color:#1A56DB;"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="w-10 h-10 rounded-full flex items-center justify-center text-white" style="background-color:#0D2E6E;"><i class="fa-solid fa-location-dot"></i></div>
                         <p class="text-sm text-gray-600">Makindye Lukuli Rd, Kampala, Uganda</p>
                     </div>
                     <div class="flex items-center space-x-4">
-                        <div class="w-10 h-10 rounded-full flex items-center justify-center text-white" style="background-color:#2EAA4A;"><i class="fa-solid fa-phone"></i></div>
+                        <div class="w-10 h-10 rounded-full flex items-center justify-center text-white" style="background-color:#0F6B3D;"><i class="fa-solid fa-phone"></i></div>
                         <p class="text-sm text-gray-600">0770 790 055 / 0705 180 476</p>
                     </div>
                     <div class="flex items-center space-x-4">
-                        <div class="w-10 h-10 rounded-full flex items-center justify-center text-white" style="background-color:#1A56DB;"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="w-10 h-10 rounded-full flex items-center justify-center text-white" style="background-color:#0D2E6E;"><i class="fa-solid fa-envelope"></i></div>
                         <p class="text-sm text-gray-600">Alafiapoint@gmail.com</p>
                     </div>
                     <div class="flex items-center space-x-4">
-                        <div class="w-10 h-10 rounded-full flex items-center justify-center text-white" style="background-color:#2EAA4A;"><i class="fa-solid fa-clock"></i></div>
-                        <p class="text-sm text-gray-600">Mon – Fri: 8am – 6pm<br>Saturday: 9am – 2pm</p>
+                        <div class="w-10 h-10 rounded-full flex items-center justify-center text-white" style="background-color:#0F6B3D;"><i class="fa-solid fa-clock"></i></div>
+                        <p class="text-sm text-gray-600">Mon â€“ Fri: 8am â€“ 6pm<br>Saturday: 9am â€“ 2pm</p>
                     </div>
                 </div>
             </div>
@@ -101,17 +117,17 @@
                 <h3 class="text-2xl font-heading font-bold mb-6" style="color:#0D2E6E;">Appointment Request</h3>
                 <form action="https://formsubmit.co/Alafiapoint@gmail.com" method="POST" class="space-y-5" id="appointmentForm">
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                        <div><label class="block text-sm font-medium text-gray-700 mb-1">First Name *</label><input type="text" name="first_name" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500" placeholder="First name"></div>
-                        <div><label class="block text-sm font-medium text-gray-700 mb-1">Last Name *</label><input type="text" name="last_name" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500" placeholder="Last name"></div>
+                        <div><label class="block text-sm font-medium text-gray-700 mb-1">First Name *</label><input type="text" name="first_name" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-[#0D2E6E]" placeholder="First name"></div>
+                        <div><label class="block text-sm font-medium text-gray-700 mb-1">Last Name *</label><input type="text" name="last_name" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-[#0D2E6E]" placeholder="Last name"></div>
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                        <div><label class="block text-sm font-medium text-gray-700 mb-1">Phone Number *</label><input type="tel" name="phone" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500" placeholder="0770 790 055"></div>
-                        <div><label class="block text-sm font-medium text-gray-700 mb-1">Email Address</label><input type="email" name="email" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500" placeholder="you@example.com"></div>
+                        <div><label class="block text-sm font-medium text-gray-700 mb-1">Phone Number *</label><input type="tel" name="phone" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-[#0D2E6E]" placeholder="0770 790 055"></div>
+                        <div><label class="block text-sm font-medium text-gray-700 mb-1">Email Address</label><input type="email" name="email" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-[#0D2E6E]" placeholder="you@example.com"></div>
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                         <div>
                             <label class="block text-sm font-medium text-gray-700 mb-1">Service Type *</label>
-                            <select name="service" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500">
+                            <select name="service" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-[#0D2E6E]">
                                 <option value="">Select a service</option>
                                 <option>Physiotherapy</option>
                                 <option>Nutrition &amp; Dietetics</option>
@@ -123,20 +139,20 @@
                         </div>
                         <div>
                             <label class="block text-sm font-medium text-gray-700 mb-1">Preferred Date *</label>
-                            <input type="date" name="date" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500">
+                            <input type="date" name="date" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-[#0D2E6E]">
                         </div>
                     </div>
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-1">Preferred Time</label>
-                        <select name="time" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500">
-                            <option>Morning (8:00 AM – 12:00 PM)</option>
-                            <option>Afternoon (12:00 PM – 4:00 PM)</option>
-                            <option>Evening (4:00 PM – 6:00 PM)</option>
+                        <select name="time" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-[#0D2E6E]">
+                            <option>Morning (8:00 AM â€“ 12:00 PM)</option>
+                            <option>Afternoon (12:00 PM â€“ 4:00 PM)</option>
+                            <option>Evening (4:00 PM â€“ 6:00 PM)</option>
                         </select>
                     </div>
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-1">Additional Notes</label>
-                        <textarea name="notes" rows="4" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500" placeholder="Tell us about your symptoms or reason for visit..."></textarea>
+                        <textarea name="notes" rows="4" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-[#0D2E6E]" placeholder="Tell us about your symptoms or reason for visit..."></textarea>
                     </div>
                     <div class="flex items-start space-x-3">
                         <input type="checkbox" id="consent" name="consent" required class="mt-1">
@@ -146,7 +162,7 @@
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_template" value="table">
                     <input type="hidden" name="_replyto" value="{{ email }}">
-                    <button type="submit" class="w-full text-white font-medium py-3 rounded-lg transition" style="background-color:#2EAA4A;">Request Appointment</button>
+                    <button type="submit" class="w-full text-white font-medium py-3 rounded-lg transition" style="background-color:#0F6B3D;">Request Appointment</button>
                 </form>
             </div>
         </div>
@@ -155,12 +171,12 @@
     <!-- Success Modal -->
     <div id="successModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
         <div class="bg-white rounded-2xl p-8 max-w-md mx-4 text-center">
-            <div class="w-16 h-16 mx-auto rounded-full flex items-center justify-center text-white text-3xl mb-4" style="background-color:#2EAA4A;">
+            <div class="w-16 h-16 mx-auto rounded-full flex items-center justify-center text-white text-3xl mb-4" style="background-color:#0F6B3D;">
                 <i class="fa-solid fa-check"></i>
             </div>
             <h3 class="text-2xl font-heading font-bold mb-2" style="color:#0D2E6E;">Appointment Requested!</h3>
             <p class="text-gray-600 mb-6">Thank you for your request. We'll contact you shortly to confirm your appointment.</p>
-            <button onclick="closeModal()" class="text-white font-medium px-8 py-3 rounded-full transition" style="background-color:#1A56DB;">Close</button>
+            <button onclick="closeModal()" class="text-white font-medium px-8 py-3 rounded-full transition" style="background-color:#0D2E6E;">Close</button>
         </div>
     </div>
 
@@ -197,21 +213,21 @@
     <!-- How It Works -->
     <section class="py-20" style="background-color:#F0F7F1;">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p class="text-sm font-bold uppercase tracking-widest mb-3" style="color:#2EAA4A;">Simple Steps</p>
+            <p class="text-sm font-bold uppercase tracking-widest mb-3" style="color:#0F6B3D;">Simple Steps</p>
             <h2 class="text-4xl font-heading font-bold mb-12" style="color:#0D2E6E;">How It Works</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-white p-8 rounded-xl shadow-sm">
-                    <div class="w-14 h-14 mx-auto rounded-full flex items-center justify-center text-white text-2xl font-bold mb-5" style="background-color:#1A56DB;">1</div>
+                    <div class="w-14 h-14 mx-auto rounded-full flex items-center justify-center text-white text-2xl font-bold mb-5" style="background-color:#0D2E6E;">1</div>
                     <h3 class="font-heading font-bold text-lg mb-2" style="color:#0D2E6E;">Fill the Form</h3>
                     <p class="text-sm text-gray-500">Provide your details, preferred service, and available time.</p>
                 </div>
                 <div class="bg-white p-8 rounded-xl shadow-sm">
-                    <div class="w-14 h-14 mx-auto rounded-full flex items-center justify-center text-white text-2xl font-bold mb-5" style="background-color:#2EAA4A;">2</div>
+                    <div class="w-14 h-14 mx-auto rounded-full flex items-center justify-center text-white text-2xl font-bold mb-5" style="background-color:#0F6B3D;">2</div>
                     <h3 class="font-heading font-bold text-lg mb-2" style="color:#0D2E6E;">We Confirm</h3>
                     <p class="text-sm text-gray-500">Our team will call or email you to confirm the appointment.</p>
                 </div>
                 <div class="bg-white p-8 rounded-xl shadow-sm">
-                    <div class="w-14 h-14 mx-auto rounded-full flex items-center justify-center text-white text-2xl font-bold mb-5" style="background-color:#1A56DB;">3</div>
+                    <div class="w-14 h-14 mx-auto rounded-full flex items-center justify-center text-white text-2xl font-bold mb-5" style="background-color:#0D2E6E;">3</div>
                     <h3 class="font-heading font-bold text-lg mb-2" style="color:#0D2E6E;">Visit the Clinic</h3>
                     <p class="text-sm text-gray-500">Come to Lukuli Rd and begin your personalised wellness journey.</p>
                 </div>
@@ -220,12 +236,12 @@
     </section>
 
     <!-- Footer -->
-    <footer class="text-white pt-16 pb-8" style="background-color:#0D2E6E; border-top:4px solid #2EAA4A;">
+    <footer class="text-white pt-16 pb-8" style="background-color:#0D2E6E; border-top:4px solid #0F6B3D;">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
                 <div>
                     <img src="Screenshot_2025-09-08_000950_c4CXhf5.png" alt="Alafia Point Wellness Clinic Logo" class="h-14 mb-4">
-                    <p class="text-xs text-gray-300 leading-relaxed">Restoring health and empowering lives — one patient at a time. Makindye Lukuli Rd, Kampala, Uganda.</p>
+                    <p class="text-xs text-gray-300 leading-relaxed">Restoring health and empowering lives â€” one patient at a time. Makindye Lukuli Rd, Kampala, Uganda.</p>
                 </div>
                 <div>
                     <h4 class="font-heading font-bold text-lg mb-4">Quick Links</h4>
@@ -241,13 +257,13 @@
                 </div>
                 <div>
                     <h4 class="font-heading font-bold text-lg mb-4">Contact</h4>
-                    <p class="text-sm text-gray-300 mb-2"><i class="fa-solid fa-location-dot mr-2" style="color:#2EAA4A;"></i>Makindye Lukuli Rd, Kampala, Uganda</p>
-                    <p class="text-sm text-gray-300 mb-2"><i class="fa-solid fa-phone mr-2" style="color:#2EAA4A;"></i>0770 790 055 / 0705 180 476</p>
-                    <p class="text-sm text-gray-300 mb-2"><i class="fa-solid fa-envelope mr-2" style="color:#2EAA4A;"></i>Alafiapoint@gmail.com</p>
-                    <p class="text-sm text-gray-300"><i class="fa-solid fa-clock mr-2" style="color:#2EAA4A;"></i>Mon–Fri: 8am–6pm | Sat: 9am–2pm</p>
+                    <p class="text-sm text-gray-300 mb-2"><i class="fa-solid fa-location-dot mr-2" style="color:#0F6B3D;"></i>Makindye Lukuli Rd, Kampala, Uganda</p>
+                    <p class="text-sm text-gray-300 mb-2"><i class="fa-solid fa-phone mr-2" style="color:#0F6B3D;"></i>0770 790 055 / 0705 180 476</p>
+                    <p class="text-sm text-gray-300 mb-2"><i class="fa-solid fa-envelope mr-2" style="color:#0F6B3D;"></i>Alafiapoint@gmail.com</p>
+                    <p class="text-sm text-gray-300"><i class="fa-solid fa-clock mr-2" style="color:#0F6B3D;"></i>Monâ€“Fri: 8amâ€“6pm | Sat: 9amâ€“2pm</p>
                 </div>
             </div>
-            <div class="pt-6 text-center text-xs text-gray-400" style="border-top:1px solid #1A56DB;">
+            <div class="pt-6 text-center text-xs text-gray-400" style="border-top:1px solid #0D2E6E;">
                 <p>Copyright &copy; 2026 Alafia Point Wellness Clinic. All Rights Reserved. | Makindye Lukuli Rd, Kampala, Uganda</p>
             </div>
         </div>
@@ -255,3 +271,5 @@
 
 </body>
 </html>
+
+
