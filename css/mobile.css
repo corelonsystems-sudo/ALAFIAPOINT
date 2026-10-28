@@ -3,6 +3,15 @@
     --brand-green: #0F6B3D;
     --brand-green-soft: rgba(15, 107, 61, 0.1);
     --brand-light: #f5f9ff;
+    --site-container: 1280px;
+}
+
+.site-shell,
+.max-w-7xl {
+    width: min(var(--site-container), calc(100% - 2rem));
+    max-width: var(--site-container);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 html {
